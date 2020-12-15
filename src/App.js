@@ -34,9 +34,7 @@ class App extends Component{
     placeholder="Search Monsters"
     handleChange={e => this.setState({searchFeild: e.target.value.toLowerCase()})}
      />
-    
     <CardList monster={filteredMonster}/> 
-
     </div>
     );
   }
