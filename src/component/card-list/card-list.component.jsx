@@ -9,6 +9,7 @@ export const CardList = variable =>{
     {  
       variable.monster.map( value =>(
       <Card key={value.id} monster={value} /> 
+      
         )  )}
 </div>)
 }

@@ -10,14 +10,15 @@ class App extends Component{
     super();
     this.state = {
     monsters: [ ],
-    searchFeild: []
+    searchFeild: ''
   };
 }
 
  componentDidMount(){
    fetch('https://jsonplaceholder.typicode.com/users')
    .then(response => response.json())
-   .then(users => this.setState({ monsters: users }));
+   .then(users => this.setState({ monsters: users }))
+   .catch("Something went wrong with Link");
  }
   render(){
 
