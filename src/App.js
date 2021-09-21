@@ -13,7 +13,7 @@ class App extends Component{
     searchFeild: ''
   };
 }
-
+console.log('updates work');
  componentDidMount(){
    fetch('https://jsonplaceholder.typicode.com/users')
    .then(response => response.json())
